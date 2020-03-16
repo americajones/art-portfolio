@@ -204,7 +204,6 @@ span {
     padding:15px;
     /* border: 1px solid red; */
     background-color: rgb(20,20,20);
-    border-radius: 15px;
     min-width: 300px;
     width: 97%;
     top: 20px;
@@ -234,7 +233,6 @@ span {
 .content {
     /* border: 1px solid rgb(214, 0, 0); */
     background-color: rgb(20,20,20);
-    border-radius: 15px;
     padding: 20px;
     padding-top: 35px;
     width: 100%;
@@ -255,6 +253,8 @@ span {
     padding: 10px;
     background-color: blue;
     border-radius: 8px;
+    float: right;
+    color: white;
 }
 
 /* #div1 {
