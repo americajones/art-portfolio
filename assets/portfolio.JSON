@@ -1,0 +1,31 @@
+{
+    "images": [{
+        "name": "A Record of Past Lives",
+        "url": "./images/image2.jpeg",
+        "description": "commissioned work",
+        "year": "2019",
+        "tagged": "portfolio MSM"
+    },
+    {
+        "name": "Keep Your Head Up",
+        "url": "./images/image3.jpeg",
+        "description": "fanart",
+        "year": "2018",
+        "tagged": "portfolio fanart haikyuu"
+    },
+    {
+        "name": "Mother and Child",
+        "url": "./images/image4.jpeg",
+        "description": "anthology submission",
+        "year": "2019",
+        "tagged": "portfolio greyscale"
+    },
+    {
+        "name": "Friends in Strange Places",
+        "url": "./images/image5.jpeg",
+        "description": "commissioned work",
+        "year": "2019",
+        "tagged": "portfolio greyscale"
+    }
+]
+}
