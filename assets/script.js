@@ -27,10 +27,15 @@ function fillportfolio() {
 $.each(images, function (index, value) {
     console.log(index, value);
     console.log(value.name);
+    let maybeSomething;
+    if (value.wideImage) {
+        maybeSomething = "h";
+    } else maybeSomething = "";
 
     let imageDiv = $("<div class='image-box'>");
-    let image = $(`<img class= 'preview-img' src = '${value.url}' id='${index}'>`);
-    imageDiv.append(image, "<br>", value.name);
+    let image = $(`<img class= 'preview-img ${maybeSomething}' src = '${value.url}' id='${index}' alt='${value.name}'>`);
+    let name = $(`<p class= 'info'> ${value.name} </p>`);
+    imageDiv.append(image, "<br>", name);
     $(".portfolio-content").append(imageDiv)
 });
 };

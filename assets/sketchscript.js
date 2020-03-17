@@ -5,14 +5,13 @@ function fillsketchbook() {
     
         let imageDiv = $("<div class='image-box'>");
         let image = $(`<img class= 'preview-img' src = '${value.url}' id='${index}'>`);
-        imageDiv.append(image, "<br>", value.name);
+        imageDiv.append(image);
         $(".portfolio-content").append(imageDiv)
     });
     };
+fillsketchbook();
 
-    fillsketchbook();
-
-    $('#Fullscreen').css('height', $(document).outerWidth() + 'px');
+$('#Fullscreen').css('height', $(document).outerWidth() + 'px');
 //for when you click on an image
 $('.preview-img').click(function () {
     console.log(this.id);

@@ -5,6 +5,10 @@ body {
     max-width: 900px;
     margin: auto;
 }
+ a:hover{
+    text-decoration: underline;
+    color: rgb(208, 255, 0);
+}
 
 #maincontent {
     margin:20px;
@@ -18,7 +22,7 @@ h1 {
     padding: 20px;
     padding-bottom: 40px;
     font-family: 'Permanent Marker', cursive, sans-serif;
-    font-size: 42px;
+    font-size: 60px;
     text-align: center;
 }
 
@@ -69,11 +73,11 @@ h3 {
     background-color: rgb(217, 255, 0);
     position: relative;
     top: 30px;
-    color: black;
 }
 #portfolioTit:hover {
-    background-color: rgb(255, 0, 21);
+    background-color: rgb(0, 190, 133);
     cursor: pointer;
+    text-decoration: none;
 }
 
 .titles {
@@ -84,6 +88,13 @@ h3 {
     width: 100%;
 }
 
+.info {
+    font-size: 13px;
+    color: rgb(88, 88, 88);
+    font-style: oblique;
+    padding-top: 5px;
+}
+
 #sketchbookTit {
     width: 180px;
     background-color: rgb(217, 255, 0);
@@ -91,8 +102,9 @@ h3 {
     top: 30px;
 }
 #sketchbookTit:hover {
-    background-color: rgb(255, 0, 21);
+    background-color: rgb(0, 190, 133);
     cursor: pointer;
+    text-decoration: none;
 }
 
 #aboutTit {
@@ -131,10 +143,6 @@ li {
 }
 
 
-a:hover{
-    text-decoration: underline;
-    color: rgb(208, 255, 0);
-}
 
 
 li:last-child {
@@ -152,17 +160,36 @@ span {
     color: rgb(0, 204, 255);
 }
 
-.preview-img {
-    max-width: 250px;
-}
+/* .preview-img {
+    /* max-width: 250px; 
+ } */ 
+ .image-box {
+     overflow: hidden;
+     padding: 10px;
+     padding-bottom: 40px;
+     text-align: center;
+     height: 400px;
+     width: 250px;
+     position: relative;
+ 
+ }
 
-.image-box {
-    padding: 10px;
-    padding-bottom: 20px;
-    text-align: center;
-    font-style: oblique;
-    color: rgb(175, 175, 175);
-}
+ 
+ /* .image-box img.h {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+} */
+
+.image-box img {
+   height: 100%;
+   /* height: auto; */
+ }
 
 .portfolio-content {
     display: flex;
@@ -188,7 +215,7 @@ span {
     z-index: 3;
    display: block;
    min-width: 300px;
-   max-width: 100%;
+   max-width: 85%;
    max-height: 85%;
    margin: auto;
    text-align: center;
@@ -206,7 +233,7 @@ span {
     background-color: rgb(20,20,20);
     min-width: 300px;
     width: 97%;
-    top: 20px;
+    top: 15px;
 }
 
 
@@ -215,15 +242,6 @@ span {
    padding: 10px;
 }
 
-.port {
-    height: 240px;
-    width: 240px;
-    border: 3px solid rgb(214, 0, 0);
-  }
-
-  .port:hover {
-      border: 3px solid red;
-  }
 
   .github {
       position: relative;
