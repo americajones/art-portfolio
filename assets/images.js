@@ -124,7 +124,7 @@ const sketches =
         },
         {
             name: "stars",
-            url: "assets/images/sketchbook/image6.png", description: "fanart",
+            url: "assets/images/sketchbook/image6.jpg", description: "fanart",
             year: "2019",
             tagged: ["sketchbook", "fanart"]
         },
