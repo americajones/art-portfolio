@@ -3,7 +3,7 @@ function fillsketchbook() {
         console.log(index, value);
         console.log(value.name);
     
-        let imageDiv = $("<div class='image-box'>");
+        let imageDiv = $("<div class='sketch-box'>");
         let image = $(`<img class= 'preview-img' src = '${value.url}' id='${index}'>`);
         imageDiv.append(image);
         $(".portfolio-content").append(imageDiv)

@@ -21,7 +21,7 @@ h1 {
     flex: 1 0 0;
     padding: 20px;
     padding-bottom: 40px;
-    font-family: 'Permanent Marker', cursive, sans-serif;
+    font-family: 'Permanent Marker', sans-serif;
     font-size: 60px;
     text-align: center;
 }
@@ -31,13 +31,13 @@ header {
 }
 
 #header-text {
-    font-family: 'Permanent Marker', cursive, sans-serif;
-    font-size: larger;
+    font-family: 'Permanent Marker', sans-serif;
+    font-size: 24px;
     
 }
 
 h2 {
-    font-family: 'Permanent Marker', cursive, sans-serif;
+    font-family: 'Permanent Marker', sans-serif;
     font-size: 30px;
     color: rgb(36, 36, 36);
     padding: 10px;
@@ -89,8 +89,8 @@ h3 {
 }
 
 .info {
-    font-size: 13px;
-    color: rgb(88, 88, 88);
+    font-size: 14px;
+    color: rgb(100, 100, 100);
     font-style: oblique;
     padding-top: 5px;
 }
@@ -155,25 +155,27 @@ a {
     text-decoration: none;
 }
 
-span {
-    display: block;
-    color: rgb(0, 204, 255);
-}
-
 /* .preview-img {
     /* max-width: 250px; 
  } */ 
  .image-box {
      overflow: hidden;
-     padding: 10px;
-     padding-bottom: 40px;
+     padding: 15px;
+     padding-bottom: 60px;
      text-align: center;
-     height: 400px;
+     height: 380px;
+     width: 230px;
+     position: relative;
+ }
+ .sketch-box {
+     overflow: hidden;
+     padding: 10px;
+     text-align: center;
+     height: 250px;
      width: 250px;
      position: relative;
+    }
  
- }
-
  
  /* .image-box img.h {
     position: absolute;
@@ -186,10 +188,16 @@ span {
     transform: translate(-50%,-50%);
 } */
 
+.sketch-box img {
+    /* border-radius: 15px; */
+    width: 100%;
+    /* height: auto; */
+}
 .image-box img {
-   height: 100%;
+    /* border-radius: 15px; */
+    height: 100%;
    /* height: auto; */
- }
+}
 
 .portfolio-content {
     display: flex;
@@ -238,7 +246,7 @@ span {
 
 
 .portfolio-set {
-   font-family: 'Permanent Marker', cursive, sans-serif;
+   font-family: 'Permanent Marker', sans-serif;
    padding: 10px;
 }
 
@@ -246,16 +254,16 @@ span {
   .github {
       position: relative;
       top:-30px;
-  }
+    }
 
-.content {
+    .content {
     /* border: 1px solid rgb(214, 0, 0); */
     background-color: rgb(20,20,20);
     padding: 20px;
     padding-top: 35px;
     width: 100%;
     min-width: 280px;
-
+    
 }
 
 #profileimage {
@@ -285,24 +293,23 @@ input[type=text], select, textarea {
     box-sizing: border-box;
     margin-top: 6px; 
     margin-bottom: 16px; 
-    resize: vertical  Allow the user to vertically resize the textarea (not horizontally) 
+    resize: vertical 
   }
   input[type=submit] {
-    background-color: rgb(197, 24, 33);
+      background-color: rgb(197, 24, 33);
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
+}
   ::placeholder {
       color: rgb(109, 109, 109);
-  }
-
-  footer {
+    }
+    
+    footer {
     border-top:1px solid rgb(66, 66, 66);
     font-size: 12px;
-    font-family: 'Permanent Marker' cursive;
     color: rgb(180, 180, 180);
     bottom: 0;
     left: 0;
@@ -310,6 +317,11 @@ input[type=text], select, textarea {
     width: 75%;
     margin: auto;
     clear: all;
+}
+
+span {
+    display: block;
+    color: rgb(0, 204, 255);
 }
 
 @media all and (max-width: 700px) {
@@ -323,6 +335,9 @@ input[type=text], select, textarea {
     #profileimage {
         margin-bottom: 10px;
     }
+    .titles {
+        flex-direction: column;
+        }
 }
 
 

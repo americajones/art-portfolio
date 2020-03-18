@@ -34,7 +34,7 @@ $.each(images, function (index, value) {
 
     let imageDiv = $("<div class='image-box'>");
     let image = $(`<img class= 'preview-img ${maybeSomething}' src = '${value.url}' id='${index}' alt='${value.name}'>`);
-    let name = $(`<p class= 'info'> ${value.name} </p>`);
+    let name = $(`<p class= 'info'> "${value.name}" </br> ${value.description} </br> ${value.year} </p>`);
     imageDiv.append(image, "<br>", name);
     $(".portfolio-content").append(imageDiv)
 });
@@ -66,7 +66,7 @@ $('.preview-img').click(function () {
         if (e.keyCode == 37) { //left arrow key 
         lastImage.hide();
         indexNum--;
-            if(indexNum == -1) indexNum = 1;
+            if(indexNum == -1) indexNum = 14;
         var sauce =$(`#${indexNum}`).attr("src");
         $("#Fullscreen img").attr('src', sauce).fadeIn();
     }
