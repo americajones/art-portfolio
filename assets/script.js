@@ -46,7 +46,7 @@ fillportfolio();
 // $(".preview-img").on("click", function() {
 // });
 
-$('#Fullscreen').css('height', $(document).outerHeight() + 'px');
+$('#Fullscreen').css('width', $(document).outerHeight() + 'px');
 //for when you click on an image
 $('.preview-img').click(function () {
     console.log(this.id);

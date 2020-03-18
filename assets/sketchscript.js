@@ -11,7 +11,7 @@ function fillsketchbook() {
     };
 fillsketchbook();
 
-$('#Fullscreen').css('height', $(document).outerWidth() + 'px');
+$('#Fullscreen').css('height', $(document).outerHeight() + 'px');
 //for when you click on an image
 $('.preview-img').click(function () {
     console.log(this.id);
