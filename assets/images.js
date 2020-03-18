@@ -118,13 +118,13 @@ const sketches =
         },
         {
             name: "twice",
-            url: "assets/images/sketchbook/16.jpg", description: "fanart",
+            url: "assets/images/sketchbook/16.jpg", 
             year: "2020",
             tagged: ["sketchbook", "fanart"]
         },
         {
             name: "stars",
-            url: "assets/images/sketchbook/image6.jpg", description: "fanart",
+            url: "assets/images/sketchbook/image6.png",
             year: "2019",
             tagged: ["sketchbook", "fanart"]
         },
