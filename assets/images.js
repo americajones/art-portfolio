@@ -40,6 +40,7 @@ const images =
             url: "assets/images/image11.jpg",
             description: "private commission",
             year: "2017",
+            wideImage: true,
             tagged: ["portfolio", "commission"]
         },
         {
@@ -69,6 +70,7 @@ const images =
             url: "assets/images/image16.jpg",
             description: "private commission",
             year: "2018",
+            wideImage: true,
             tagged: ["portfolio"]
         },
         {
@@ -83,6 +85,7 @@ const images =
             url: "assets/images/image17.jpg",
             description: "private commission",
             year: "2019",
+            wideImage: true,
             tagged: ["portfolio"]
         },
         {
