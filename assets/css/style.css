@@ -254,7 +254,7 @@ span {
     padding: 20px;
     padding-top: 35px;
     width: 100%;
-    min-width: 300px;
+    min-width: 280px;
 
 }
 
@@ -274,36 +274,6 @@ span {
     float: right;
     color: white;
 }
-
-/* #div1 {
-    background-color: rgb(0, 204, 255);
-    height: 30px;
-    width: 30px;
-    position: relative;
-    top:23%;
-    left: 10%;
-    z-index: 1;
-}
-
-#div2 {
-    background-color: rgb(200, 255, 0);
-    height: 20px;
-    width: 20px;
-    position: relative;
-    top: 15%;
-    left: -8%;
-    z-index: 2;
-}
-
-#div3 {
-    background-color: rgb(255, 0, 21);
-    height: 40px;
-    width: 40px;
-    z-index: 0;
-    position: relative;
-    left: 2%;
-    top: -5%;
-} */
 
 input[type=text], select, textarea {
     width: 100%; 
@@ -359,9 +329,13 @@ input[type=text], select, textarea {
 
 @media only screen and (min-device-width: 320px) 
 and (max-device-width: 667px)  {
+
     .nav-butts {
         flex-direction: column;
         border-left: 1px solid rgb(214, 0, 0);
+    }
+    h1 {
+        font-size: 46px;
     }
     li {
         border: none;
@@ -381,5 +355,25 @@ and (max-device-width: 667px)  {
         left: -20px;
         font-size: large;
     }
-    
+    .titles {
+        /* width: 50%;
+        height: 50%; */
+        flex-direction: column;
+        }
+    #sketchbookTit {
+        font-size: 25px;
+    }
+    #portfolioTit {
+        font-size: 25px;
+    }
+    .image-box {
+        height: 250px;
+    }
+    .image-box img {
+        height: 200%;
+        padding: 0;
+    }
+    #Fullscreen {
+        height: fit-content;
+    }
 }
