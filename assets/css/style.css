@@ -177,28 +177,21 @@ a {
     }
  
  
- /* .image-box img.h {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    height: 100%;
-    width: auto;
-    -webkit-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-} */
-
-.sketch-box img {
-    /* border-radius: 15px; */
-    width: 100%;
-    /* height: auto; */
-}
-.image-box img {
-    /* border-radius: 15px; */
-    height: 100%;
-   /* height: auto; */
-}
-
+    
+    .sketch-box img {
+        /* border-radius: 15px; */
+        width: 100%;
+        /* height: auto; */
+    }
+    .image-box img {
+        /* border-radius: 15px; */
+        height: 100%;
+        /* height: auto; */
+    }
+    
+    img.h {
+     transform: translate(-25%);
+   }
 .portfolio-content {
     display: flex;
     flex-flow: row wrap; 
