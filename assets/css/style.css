@@ -217,7 +217,7 @@ a {
    display: block;
    min-width: 300px;
    max-width: 85%;
-   max-height: 85%;
+   max-height: 60%;
    margin: auto;
    text-align: center;
 }
