@@ -117,6 +117,7 @@ const sketches =
             name: "A Record of Past Lives",
             url: "assets/images/sketchbook/3.jpg",
             year: "2019",
+            wideImage: true,
             tagged: ["sketchbook MSM"]
         },
         {
@@ -129,6 +130,7 @@ const sketches =
             name: "stars",
             url: "assets/images/sketchbook/image6.PNG",
             year: "2019",
+            wideImage: true,
             tagged: ["sketchbook", "fanart"]
         },
         {
@@ -171,6 +173,7 @@ const sketches =
             name: "fighto",
             url: "assets/images/sketchbook/32.jpg",
             year: "2018",
+            wideImage: true,
             tagged: ["sketchbook"]
         },
         {
@@ -201,6 +204,7 @@ const sketches =
             name: "carrot",
             url: "assets/images/sketchbook/35.jpg",
             year: "2018",
+            wideImage: true,
             tagged: ["sketchbook"]
         },
         {
@@ -213,6 +217,7 @@ const sketches =
             name: "trust them",
             url: "assets/images/sketchbook/image11.jpg",
             year: "2019",
+            wideImage: true,
             tagged: ["sketchbook"]
         },
         {
@@ -225,6 +230,7 @@ const sketches =
             name: "Village of Shiminpur",
             url: "assets/images/sketchbook/39.jpg",
             year: "2019",
+            wideImage: true,
             tagged: ["sketchbook"]
         },
 

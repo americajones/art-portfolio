@@ -1,24 +1,3 @@
-// const jsonPortfolio = "portfolio.JSON";
-// const portfolio = JSON.parse(jsonPortfolio);
-
-
-// console.log("oho", portfolio);
-// console.log("ohoho", portfolio.images[1]);
-
-
-// $.getJSON( "portfolio.json", function( data ) {
-//     var images = [];
-//     $.each( data, function( key, val ) {
-//       images.push( "<li id='" + key + "'>" + val + "</li>" );
-//     });
-
-//     $( "<ul/>", {
-//       "class": "my-new-list",
-//       html: items.join( "" )
-//     }).appendTo( ".portfolio-content" );
-//   });
-
-// import { images } from "./images.js";
 
 console.log("array: ", images);
 console.log("index 3 tagged: ", images[3].tagged);
@@ -34,7 +13,7 @@ $.each(images, function (index, value) {
 
     let imageDiv = $("<div class='image-box'>");
     let image = $(`<img class= 'preview-img ${maybeSomething}' src = '${value.url}' id='${index}' alt='${value.name}'>`);
-    let name = $(`<p class= 'info'> "${value.name}" </br> ${value.description} </br> ${value.year} </p>`);
+    let name = $(`<p class= 'info'> "${value.name}" </br> ${value.year} </p>`);
     imageDiv.append(image, "<br>", name);
     $(".portfolio-content").append(imageDiv)
 });

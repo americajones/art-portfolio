@@ -2,9 +2,13 @@ function fillsketchbook() {
     $.each(sketches, function (index, value) {
         console.log(index, value);
         console.log(value.name);
-    
+        let maybeSomething;
+        if (!value.wideImage) {
+            maybeSomething = "w";
+        } else maybeSomething = "";
+
         let imageDiv = $("<div class='sketch-box'>");
-        let image = $(`<img class= 'preview-img' src = '${value.url}' id='${index}'>`);
+        let image = $(`<img class= 'preview-img ${maybeSomething}' src = '${value.url}' id='${index}'>`);
         imageDiv.append(image);
         $(".portfolio-content").append(imageDiv)
     });

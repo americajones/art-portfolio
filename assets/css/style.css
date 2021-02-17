@@ -1,387 +1,378 @@
 body {
-    background-color: rgb(30, 30, 30);
-    color: #E8E8E8;
-    font-family: Arial, Helvetica, sans-serif;
-    max-width: 900px;
-    margin: auto;
+  background-color: rgb(30, 30, 30);
+  color: #e8e8e8;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: 99vh;
 }
- a:hover{
-    text-decoration: underline;
-    color: rgb(208, 255, 0);
+a:hover {
+  text-decoration: underline;
+  color: rgb(208, 255, 0);
 }
 
 #maincontent {
-    margin:20px;
-    display: flex;
-    flex-flow: row wrap;
-    align-content: space-between;
+  margin: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
 }
 
 h1 {
-    flex: 1 0 0;
-    padding: 20px;
-    padding-bottom: 40px;
-    font-family: 'Permanent Marker', sans-serif;
-    font-size: 60px;
-    text-align: center;
+  flex: 1 0 0;
+  padding: 20px;
+  padding-bottom: 40px;
+  font-family: "Permanent Marker", sans-serif;
+  font-size: 60px;
+  text-align: center;
 }
 
 header {
-    display: flex;
+  display: flex;
 }
 
 #header-text {
-    font-family: 'Permanent Marker', sans-serif;
-    font-size: 24px;
-    
+  font-family: "Permanent Marker", sans-serif;
+  font-size: 24px;
 }
 
 h2 {
-    font-family: 'Permanent Marker', sans-serif;
-    font-size: 30px;
-    color: rgb(36, 36, 36);
-    padding: 10px;
-    margin: 15px 15px 15px 35px;
-    text-align: center;
+  font-family: "Permanent Marker", sans-serif;
+  font-size: 30px;
+  color: rgb(36, 36, 36);
+  padding: 10px;
+  margin: 15px 15px 15px 35px;
+  text-align: center;
 }
 
 .banner {
-    position: relative;
-    top: -80px;
-    background-color: rgb(217, 255, 0);
-    z-index: 2;
-    color: rgb(36, 36, 36);
-    width: 200px;
+  position: relative;
+  top: -80px;
+  background-color: rgb(217, 255, 0);
+  z-index: 2;
+  color: rgb(36, 36, 36);
+  width: 200px;
 }
 
 h3 {
-    font-size: large;
-    padding: 10px;
-    text-align: center;
+  font-size: large;
+  padding: 10px;
+  text-align: center;
 }
 
 .hidden {
-    width: 190px;
-    display: none;
-    padding: 5px;
-    position: absolute;
-    background-color: rgb(217, 255, 0);
+  width: 190px;
+  display: none;
+  padding: 5px;
+  position: absolute;
+  background-color: rgb(217, 255, 0);
 }
 
 #portfolioTit {
-    width: 150px;
-    background-color: rgb(217, 255, 0);
-    position: relative;
-    top: 30px;
+  width: 150px;
+  background-color: rgb(217, 255, 0);
+  position: relative;
+  top: 30px;
 }
 #portfolioTit:hover {
-    background-color: rgb(0, 190, 133);
-    cursor: pointer;
-    text-decoration: none;
+  background-color: rgb(0, 190, 133);
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .titles {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
 }
 
 .info {
-    font-size: 14px;
-    color: rgb(100, 100, 100);
-    font-style: oblique;
-    padding-top: 5px;
+  font-size: 14px;
+  color: rgb(100, 100, 100);
+  padding-top: 5px;
 }
 
 #sketchbookTit {
-    width: 180px;
-    background-color: rgb(217, 255, 0);
-    position: relative;
-    top: 30px;
+  width: 180px;
+  background-color: rgb(217, 255, 0);
+  position: relative;
+  top: 30px;
 }
 #sketchbookTit:hover {
-    background-color: rgb(0, 190, 133);
-    cursor: pointer;
-    text-decoration: none;
+  background-color: rgb(0, 190, 133);
+  cursor: pointer;
+  text-decoration: none;
 }
 
 #aboutTit {
-    width: 150px;
-    background-color: rgb(0, 204, 255);
-    position: relative;
-    top: 30px;
+  width: 150px;
+  background-color: rgb(0, 204, 255);
+  position: relative;
+  top: 30px;
 }
 
 #contactTit {
-    width: 125px;
-    background-color: rgb(255, 0, 21);
-    position: relative;
-    top: 30px;
+  width: 125px;
+  background-color: rgb(255, 0, 21);
+  position: relative;
+  top: 30px;
 }
 
 .nav-butts {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
-    font-size: 16px;
-    float: right;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  font-size: 16px;
+  float: right;
 }
 
 .break {
-    flex-basis: 100%;
-    height: 0;
+  flex-basis: 100%;
+  height: 0;
 }
 
 li {
-    padding:10px;
-    height: 25px;
-    text-align: center;
-    color: #E8E8E8;
-    border-right: 1px solid rgb(214, 0, 0);
+  padding: 10px;
+  height: 25px;
+  text-align: center;
+  color: #e8e8e8;
+  border-right: 1px solid rgb(214, 0, 0);
 }
 
-
-
-
 li:last-child {
-    border-right: none;
+  border-right: none;
 }
 
 a {
-    color: #E8E8E8;
-    cursor: pointer;
-    text-decoration: none;
+  color: #e8e8e8;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 /* .preview-img {
     /* max-width: 250px; 
- } */ 
- .image-box {
-     overflow: hidden;
-     padding: 15px;
-     padding-bottom: 60px;
-     text-align: center;
-     height: 380px;
-     width: 230px;
-     position: relative;
- }
- .sketch-box {
-     overflow: hidden;
-     padding: 10px;
-     text-align: center;
-     height: 250px;
-     width: 250px;
-     position: relative;
-    }
- 
- 
-    
-    .sketch-box img {
-        /* border-radius: 15px; */
-        width: 100%;
-        /* height: auto; */
-    }
-    .image-box img {
-        /* border-radius: 15px; */
-        height: 100%;
-        /* height: auto; */
-    }
-    
-    img.h {
-     transform: translate(-25%);
-   }
+ } */
+.image-box {
+  overflow: hidden;
+  margin: 15px;
+  padding-bottom: 60px;
+  text-align: center;
+  height: 380px;
+  width: 230px;
+  position: relative;
+}
+.sketch-box {
+  overflow: hidden;
+  margin: 10px;
+  text-align: center;
+  height: 250px;
+  width: 250px;
+  position: relative;
+}
+.sketch-box img {
+  /* border-radius: 15px; */
+  height: 100%;
+  /* height: auto; */
+}
+.image-box img {
+  /* border-radius: 15px; */
+  height: 100%;
+  /* height: auto; */
+}
+img.h {
+  transform: translate(-25%);
+}
+img.w {
+  transform: scale(1.5);
+}
 .portfolio-content {
-    display: flex;
-    flex-flow: row wrap; 
-    justify-content: flex-start;
-    align-items: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 #Fullscreen {
-    z-index: 2;
-    width: 100%;
-    display: none;
-    position:fixed;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-    /* I made a 50% opacity black tile background for this 
+  z-index: 2;
+  width: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* I made a 50% opacity black tile background for this 
     div so it would seem more... modal-y*/
-    background: transparent url('../images/trans-black-tile.png') repeat; 
+  background: transparent url("../images/trans-black-tile.png") repeat;
 }
 #Fullscreen img {
-    z-index: 3;
-   display: block;
-   min-width: 300px;
-   max-width: 85%;
-   max-height: 60%;
-   margin: auto;
-   text-align: center;
+  z-index: 3;
+  display: block;
+  min-width: 300px;
+  max-width: 85%;
+  max-height: 60%;
+  margin: auto;
+  text-align: center;
 }
 
 #top {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: auto;
-    position: relative;
-    padding:15px;
-    /* border: 1px solid red; */
-    background-color: rgb(20,20,20);
-    min-width: 300px;
-    width: 97%;
-    top: 15px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  position: relative;
+  padding: 15px;
+  /* border: 1px solid red; */
+  background-color: rgb(20, 20, 20);
+  min-width: 300px;
+  width: 97%;
+  top: 15px;
 }
-
 
 .portfolio-set {
-   font-family: 'Permanent Marker', sans-serif;
-   padding: 10px;
+  font-family: "Permanent Marker", sans-serif;
+  padding: 10px;
 }
 
+.github {
+  position: relative;
+  top: -30px;
+}
 
-  .github {
-      position: relative;
-      top:-30px;
-    }
-
-    .content {
-    /* border: 1px solid rgb(214, 0, 0); */
-    background-color: rgb(20,20,20);
-    padding: 20px;
-    padding-top: 35px;
-    width: 100%;
-    min-width: 280px;
-    
+.content {
+  /* border: 1px solid rgb(214, 0, 0); */
+  background-color: rgb(20, 20, 20);
+  padding: 20px;
+  padding-top: 35px;
+  width: 100%;
+  min-width: 280px;
 }
 
 #profileimage {
-    width: 280px;
-    float: left;
-    padding: 0px 15px 8px 15px;
-    margin-left: 20px;
-
+  width: 280px;
+  float: left;
+  padding: 0px 15px 8px 15px;
+  margin-left: 20px;
 }
 
 #submit-butt {
-    border-style: none;
-    padding: 10px;
-    background-color: blue;
-    border-radius: 8px;
-    float: right;
-    color: white;
+  border-style: none;
+  padding: 10px;
+  background-color: rgb(0, 106, 192);
+  border-radius: 2px;
+  float: right;
+  color: white;
 }
 
-input[type=text], select, textarea {
-    width: 100%; 
-    background-color: rgb(66, 66, 66);
-    color:whitesmoke;
-    padding: 12px;  
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    box-sizing: border-box;
-    margin-top: 6px; 
-    margin-bottom: 16px; 
-    resize: vertical 
-  }
-  input[type=submit] {
-      background-color: rgb(197, 24, 33);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  background-color: rgb(66, 66, 66);
+  color: whitesmoke;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
-  ::placeholder {
-      color: rgb(109, 109, 109);
-    }
-    
-    footer {
-    border-top:1px solid rgb(66, 66, 66);
-    font-size: 12px;
-    color: rgb(180, 180, 180);
-    bottom: 0;
-    left: 0;
-    text-align: center;
-    width: 75%;
-    margin: auto;
-    clear: all;
+input[type="submit"] {
+  background-color: rgb(197, 24, 33);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+::placeholder {
+  color: rgb(109, 109, 109);
+}
+
+footer {
+  border-top: 1px solid rgb(66, 66, 66);
+  font-size: 12px;
+  color: rgb(180, 180, 180);
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  clear: all;
+  margin-top: auto;
 }
 
 span {
-    display: block;
-    color: rgb(0, 204, 255);
+  display: block;
+  color: rgb(0, 204, 255);
 }
 
 @media all and (max-width: 700px) {
-    .nav-butts {
-        flex-direction: column;
-        border-left: 1px solid rgb(214, 0, 0);
-    }
-    li {
-        border: none;
-    }
-    #profileimage {
-        margin-bottom: 10px;
-    }
-    .titles {
-        flex-direction: column;
-        }
+  .nav-butts {
+    flex-direction: column;
+    border-left: 1px solid rgb(214, 0, 0);
+  }
+  li {
+    border: none;
+  }
+  #profileimage {
+    margin-bottom: 10px;
+  }
+  .titles {
+    flex-direction: column;
+  }
 }
 
-
-
-@media only screen and (min-device-width: 320px) 
-and (max-device-width: 667px)  {
-
-    .nav-butts {
-        flex-direction: column;
-        border-left: 1px solid rgb(214, 0, 0);
-    }
-    h1 {
-        font-size: 46px;
-    }
-    li {
-        border: none;
-    }
-    #profileimage {
-      margin-left: 0;
-    }
-    .hidden {
-        display: block;
-        width: 210px;
-    }
-    h3 {
-        font-size: x-large;
-    }
-    .banner {
-        width: 220px;
-        left: -20px;
-        font-size: large;
-    }
-    .titles {
-        /* width: 50%;
+@media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
+  .nav-butts {
+    flex-direction: column;
+    border-left: 1px solid rgb(214, 0, 0);
+  }
+  h1 {
+    font-size: 46px;
+  }
+  li {
+    border: none;
+  }
+  #profileimage {
+    margin-left: 0;
+  }
+  .hidden {
+    display: block;
+    width: 210px;
+  }
+  h3 {
+    font-size: x-large;
+  }
+  .banner {
+    width: 220px;
+    left: -20px;
+    font-size: large;
+  }
+  .titles {
+    /* width: 50%;
         height: 50%; */
-        flex-direction: column;
-        }
-    #sketchbookTit {
-        font-size: 25px;
-    }
-    #portfolioTit {
-        font-size: 25px;
-    }
-    .image-box {
-        height: 250px;
-    }
-    .image-box img {
-        height: 200%;
-        padding: 0;
-    }
-    #Fullscreen {
-        height: fit-content;
-    }
+    flex-direction: column;
+  }
+  #sketchbookTit {
+    font-size: 25px;
+  }
+  #portfolioTit {
+    font-size: 25px;
+  }
+  .image-box {
+    height: 250px;
+  }
+  .image-box img {
+    height: 200%;
+    padding: 0;
+  }
+  #Fullscreen {
+    height: fit-content;
+  }
 }
