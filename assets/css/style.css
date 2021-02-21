@@ -152,6 +152,9 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
+p {
+  padding: 10px;
+}
 
 /* .preview-img {
     /* max-width: 250px; 
@@ -159,7 +162,7 @@ a {
 .image-box {
   overflow: hidden;
   margin: 15px;
-  padding-bottom: 60px;
+  padding-bottom: 35px;
   text-align: center;
   height: 380px;
   width: 230px;
@@ -213,8 +216,8 @@ img.w {
   z-index: 3;
   display: block;
   min-width: 300px;
-  max-width: 85%;
-  max-height: 60%;
+  max-width: 98vh;
+  max-height: 100vh;
   margin: auto;
   text-align: center;
 }

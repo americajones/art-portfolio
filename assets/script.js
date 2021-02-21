@@ -36,10 +36,6 @@ $('.preview-img').click(function () {
 
     var indexNum = this.id;
     var lastImage = $("#Fullscreen img");
-//     var picSrc1 = $(`#${this.id - 1}`);
-//     var picSrc2 = $(`#${this.id + 1}`);
-//    var sauce1 = picSrc1.attr("src");
-//    var sauce2 = picSrc2.attr("src");
     $(window).keydown(function(e){
     
         if (e.keyCode == 37) { //left arrow key 

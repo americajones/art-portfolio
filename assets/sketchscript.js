@@ -1,7 +1,5 @@
 function fillsketchbook() {
     $.each(sketches, function (index, value) {
-        console.log(index, value);
-        console.log(value.name);
         let maybeSomething;
         if (!value.wideImage) {
             maybeSomething = "w";
@@ -18,32 +16,32 @@ fillsketchbook();
 $('#Fullscreen').css('height', $(document).outerHeight() + 'px');
 //for when you click on an image
 $('.preview-img').click(function () {
-    console.log(this.id);
     var src = $(this).attr('src'); //get the source attribute of the clicked image
     $('#Fullscreen img').attr('src', src); //assign it to the tag for your fullscreen div
-    console.log(src);
-    $('#Fullscreen').fadeIn("fast");
+    $('#Fullscreen').show();
 
     var indexNum = this.id;
     var lastImage = $("#Fullscreen img");
     $(window).keydown(function(e){
     
         if (e.keyCode == 37) { //left arrow key 
+            indexNum--;
+            console.log(indexNum);
         lastImage.hide();
-        indexNum--;
-            if(indexNum == -1) indexNum = 1;
+            if(indexNum == 0) indexNum = 18;
         var sauce =$(`#${indexNum}`).attr("src");
-        $("#Fullscreen img").attr('src', sauce).fadeIn();
+        $("#Fullscreen img").attr('src', sauce).show();
     }
     if (e.keyCode == 39) { //right arrow key
-        lastImage.hide();
         indexNum++;
+        console.log(indexNum);
+        lastImage.hide();
         var sauce =$(`#${indexNum}`).attr("src");
-            if(indexNum == 15) indexNum = 0;
-        $("#Fullscreen img").attr('src', sauce).fadeIn();
+            if(indexNum == 19) indexNum = 0;
+        $("#Fullscreen img").attr('src', sauce).show();
         }
     });
 });
 $('#Fullscreen').click(function () {
-    $(this).fadeOut(); //this will hide the fullscreen div if you click away from the image. 
+    $(this).hide(); //this will hide the fullscreen div if you click away from the image. 
 });
