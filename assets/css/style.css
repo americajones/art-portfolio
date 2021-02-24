@@ -2,7 +2,7 @@ body {
   background-color: rgb(30, 30, 30);
   color: #e8e8e8;
   font-family: Arial, Helvetica, sans-serif;
-  max-width: 900px;
+  max-width: 1100px;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -94,6 +94,7 @@ h3 {
   font-size: 14px;
   color: rgb(100, 100, 100);
   padding-top: 5px;
+  z-index: 3;
 }
 
 #sketchbookTit {
@@ -159,14 +160,16 @@ p {
 /* .preview-img {
     /* max-width: 250px; 
  } */
-.image-box {
+.image-div {
   overflow: hidden;
-  margin: 15px;
-  padding-bottom: 35px;
+  margin: 10px;
   text-align: center;
   height: 380px;
   width: 230px;
   position: relative;
+}
+.preview-img {
+  height: 100%;
 }
 .sketch-box {
   overflow: hidden;
@@ -176,16 +179,7 @@ p {
   width: 250px;
   position: relative;
 }
-.sketch-box img {
-  /* border-radius: 15px; */
-  height: 100%;
-  /* height: auto; */
-}
-.image-box img {
-  /* border-radius: 15px; */
-  height: 100%;
-  /* height: auto; */
-}
+
 img.h {
   transform: translate(-25%);
 }
@@ -197,6 +191,7 @@ img.w {
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: flex-start;
+  text-align: center;
 }
 
 #Fullscreen {
@@ -331,7 +326,7 @@ span {
   }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
+@media only screen and (min-device-width: 0px) and (max-device-width: 667px) {
   .nav-butts {
     flex-direction: column;
     border-left: 1px solid rgb(214, 0, 0);
@@ -368,14 +363,39 @@ span {
   #portfolioTit {
     font-size: 25px;
   }
-  .image-box {
-    height: 250px;
+  .image-div {
+    height: 380px;
+    width: 100vw;
+    margin: 0px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 45px;
   }
-  .image-box img {
-    height: 200%;
+
+  .preview-img {
+    height: auto;
+    width: 100vw;
     padding: 0;
+  }
+  .preview-img.h {
+    height: 380px;
+    width: auto;
   }
   #Fullscreen {
     height: fit-content;
+  }
+  #maincontent {
+    margin: 0;
+  }
+  #top {
+    top: 0px;
+  }
+  .content {
+    padding: 0px;
+    margin: 0px;
+    min-width: 300px;
+  }
+  #sketchbookTit {
+    top: 3px;
   }
 }
