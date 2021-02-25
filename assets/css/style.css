@@ -14,7 +14,7 @@ a:hover {
 }
 
 #maincontent {
-  margin: 20px;
+  margin: 10px;
   display: flex;
   flex-flow: row wrap;
   align-content: space-between;
@@ -160,6 +160,9 @@ p {
 /* .preview-img {
     /* max-width: 250px; 
  } */
+.image-box {
+  margin-bottom: 25px;
+}
 .image-div {
   overflow: hidden;
   margin: 10px;
@@ -310,23 +313,7 @@ span {
   color: rgb(0, 204, 255);
 }
 
-@media all and (max-width: 700px) {
-  .nav-butts {
-    flex-direction: column;
-    border-left: 1px solid rgb(214, 0, 0);
-  }
-  li {
-    border: none;
-  }
-  #profileimage {
-    margin-bottom: 10px;
-  }
-  .titles {
-    flex-direction: column;
-  }
-}
-
-@media only screen and (min-device-width: 0px) and (max-device-width: 667px) {
+@media only screen and (min-device-width: 0px) and (max-device-width: 600px) {
   .nav-butts {
     flex-direction: column;
     border-left: 1px solid rgb(214, 0, 0);
@@ -338,11 +325,15 @@ span {
     border: none;
   }
   #profileimage {
-    margin-left: 0;
+    margin-bottom: 0px;
   }
   .hidden {
     display: block;
     width: 210px;
+  }
+  .sketch-box {
+    width: 100vw;
+    height: 300px;
   }
   h3 {
     font-size: x-large;
@@ -359,9 +350,21 @@ span {
   }
   #sketchbookTit {
     font-size: 25px;
+    top: 3px;
   }
   #portfolioTit {
+    top: 3px;
     font-size: 25px;
+  }
+  #aboutTit {
+    top: 3px;
+  }
+  #contactTit {
+    top: 3px;
+  }
+  #about {
+    display: flex;
+    flex-direction: column;
   }
   .image-div {
     height: 380px;
@@ -369,7 +372,6 @@ span {
     margin: 0px;
     position: relative;
     overflow: hidden;
-    margin-bottom: 45px;
   }
 
   .preview-img {
@@ -377,12 +379,20 @@ span {
     width: 100vw;
     padding: 0;
   }
+  .sketch-box .preview-img {
+    height: 370px;
+    width: auto;
+  }
   .preview-img.h {
     height: 380px;
     width: auto;
   }
   #Fullscreen {
     height: fit-content;
+  }
+  #Fullscreen img {
+    min-width: none;
+    width: 100vw;
   }
   #maincontent {
     margin: 0;
@@ -394,8 +404,5 @@ span {
     padding: 0px;
     margin: 0px;
     min-width: 300px;
-  }
-  #sketchbookTit {
-    top: 3px;
   }
 }

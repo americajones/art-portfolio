@@ -19,7 +19,7 @@ function fillportfolio() {
     let name = $(`<p class= 'info'> "${value.name}" </br> ${value.year} </p>`);
     infoDiv.append(name);
     imageDiv.append(image);
-    imageBox.append(imageDiv, "<br>", infoDiv);
+    imageBox.append(imageDiv, infoDiv);
     $(".portfolio-content").append(imageBox);
   });
 }
